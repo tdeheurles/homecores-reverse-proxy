@@ -1,18 +1,18 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: k8s-reverse-proxy
+  name: k8s-rp
 
 spec:
   hostNetwork:     true
   imagePullPolicy: Always
   volumes:
-    - name:   k8s-reverse-proxy
+    - name:   k8s-rp
       hostPath:
         path: "/home/core/reverse_proxy"
   containers:
-    - name:  k8s-reverse-proxy
-      image: nginx:latest
+    - name:  k8s-rp
+      image: tdeheurles/homecores-reverse-proxy
       volumeMounts:
         - mountPath: /etc/nginx/conf.d/
-          name:      k8s-reverse-proxy
+          name:      k8s-rp
