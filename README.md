@@ -1,3 +1,5 @@
+[![](https://badge.imagelayers.io/tdeheurles/homecores-reverse-proxy:latest.svg)](https://imagelayers.io/?images=tdeheurles/homecores-reverse-proxy:latest 'Get your own badge on imagelayers.io')
+
 # Kubernetes reverse Proxy
 
 Simple reverse proxy running as a pod.
